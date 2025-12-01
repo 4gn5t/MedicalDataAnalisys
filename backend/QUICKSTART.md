@@ -16,7 +16,7 @@ cp .env.example .env
 
 **Варіант A: Через скрипт (найпростіше)**
 ```bash
-./start_server.sh
+./scripts/start_server.sh
 ```
 
 **Варіант B: Вручну**
@@ -51,12 +51,12 @@ http://127.0.0.1:8000/api/docs
 
 ### Pytest (unit тести)
 ```bash
-./run_pytest.sh
+./scripts/run_pytest.sh
 ```
 
 ### Shell тести (integration)
 ```bash
-./test_all.sh
+./scripts/test_all.sh
 ```
 
 ---
