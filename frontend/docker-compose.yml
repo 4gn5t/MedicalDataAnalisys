@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - BACKEND_API_URL=http://backend:8000
+      - API_KEY=my-super-secret-api-key-2024
+    volumes:
+      - ./:/app
+    depends_on:
+      - backend
+    networks:
+      - medical-network
+
+networks:
+  medical-network:
+    external: true
